@@ -3,12 +3,14 @@
 
 struct Node {
 	public:
-		int data;
-		Node* next;
 		Node();
+		void showContents();
 		void append(int value);
 		void remove(int value);
-		void displayValue(int value);
+		bool find(int value);
+		int data;
+		bool head;
+		Node* next;
 };
 
 #endif
